@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --backgroud:#141E27;
+    --titulo: #5EE6EB;
+    --verde:#00A416;
+    --barra:#4D4C7D;
+    --subtitulo:#363062;
+    --segundo_subtitulo:#B8FFF9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    background: var(--backgroud);
+}
+
+body, button, input, select,textarea{
+    font-family:'Roboto', sans-serif;;
+    color: white;
+}
