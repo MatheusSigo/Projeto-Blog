@@ -7,6 +7,7 @@
     --barra:#4D4C7D;
     --subtitulo:#363062;
     --segundo_subtitulo:#B8FFF9;
+    --escrita: #fff;
 }
 
 * {
@@ -22,3 +23,45 @@ body, button, input, select,textarea{
     font-family:'Roboto', sans-serif;;
     color: white;
 }
+/* tamanho das letras */
+h1{
+    font-size: 44px;
+}
+
+h2{
+    font-size: 24px;
+}
+/* define a margem e a gordura da fonte */
+h1, h2{
+    margin: 0;
+    font-weight: 700;
+}
+
+p{
+    color:var(--escrita)
+}
+
+button{
+    background: var(--verde);
+    border: 0;
+    border-radius: 5px;
+    padding: 8px 35px;
+    color: var(--escrita);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header{
+    height: calc(100vh - 65px);
+    display: flex;
+    align-items: center;
+}
+ header .container{
+    width: 50%;
+    height: fit-content;
+    padding: 0 100px;
+ }
+
+ header .container h1{
+    color: var(--titulo)
+ }
