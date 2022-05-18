@@ -56,12 +56,34 @@ header{
     display: flex;
     align-items: center;
 }
- header .container{
+header .container{
     width: 50%;
     height: fit-content;
     padding: 0 100px;
- }
+}
 
- header .container h1{
-    color: var(--titulo)
- }
+header .container h1{
+   color: var(--titulo)
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    background: var(--backgroud);
+    padding: 0 100px;
+    position: sticky;
+    top: 0;
+}
+
+nav img{
+    height: 55px;
+}
+
+nav ul a{
+    font-size: 24px;
+    color: var(--titulo);
+    text-decoration: none;
+    margin: 0 35px;
+}
