@@ -62,6 +62,10 @@ header .container{
     padding: 0 100px;
 }
 
+header .container img{
+    display: none;  
+}
+
 header .container h1{
    color: var(--titulo)
 }
@@ -86,4 +90,23 @@ nav ul a{
     color: var(--titulo);
     text-decoration: none;
     margin: 0 35px;
+}
+
+section{
+    background: purple;
+    height: 1000px;
+}
+
+@media (max-width:767px) {
+    header .container{
+        width: 100%;
+    }
+    header .container img{
+        display: inline;
+        height: 55px;
+        margin-bottom: 75px;
+    }
+    nav img{
+        display: none;
+    }
 }
