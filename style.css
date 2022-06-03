@@ -25,11 +25,11 @@ body, button, input, select,textarea{
 }
 /* tamanho das letras */
 h1{
-    font-size: 44px;
+    font-size: 60px;
 }
 
 h2{
-    font-size: 24px;
+    font-size: 30px;
 }
 /* define a margem e a gordura da fonte */
 h1, h2{
@@ -38,6 +38,7 @@ h1, h2{
 }
 
 p{
+    font-size: 30px;
     color:var(--escrita)
 }
 
@@ -52,10 +53,16 @@ button{
 }
 
 header{
-    height: calc(100vh - 65px);
+    height: calc(100vh - 70px);
     display: flex;
     align-items: center;
 }
+
+header .container h1{
+    width: 200%;
+    padding: 0 0px;
+}
+
 header .container{
     width: 50%;
     height: fit-content;
@@ -92,9 +99,48 @@ nav ul a{
     margin: 0 35px;
 }
 
-section{
-    background: purple;
-    height: 1000px;
+.about-me {
+    display: flex;
+    padding: 100px;
+}
+
+.about-me .container {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.about-me .container h1{
+    font-size: 50px;
+    color: var(--titulo);
+}
+
+.about-me .container p{
+    font-size: 25px;
+}
+
+.about-me .img-container {
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.about-me .img-container img {
+    width: 50%;
+    height: 100%;
+}
+
+.about-me .img-container .line {
+    width: calc(50% + 50px);
+    height: calc(100% + 50px);
+    border: 3px solid var(--subtitulo);
+    position: absolute;
+    top: -25px;
+    left: calc(50% - 50%/2 - 25px);
+}
+
+.about-me .img-container .line.blue {
+    transform: rotate(-4.3deg);
+    border-color: var(--titulo);
 }
 
 @media (max-width:767px) {
